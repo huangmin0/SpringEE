@@ -6,7 +6,7 @@
     <session-factory>
     <!-- Hibernate链接数据库的基本信息 -->
     <property name="connection.username">root</property>
-    <property name="connection.password">root2</property>
+    <property name="connection.password">root</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="connection.url">jdbc:mysql://localhost:3306/hibernate1</property>
 	<!-- Hibernate 的基本配置 -->

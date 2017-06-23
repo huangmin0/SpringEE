@@ -2,6 +2,8 @@ package com.hm.hibernate.entities;
 
 import static org.junit.Assert.*;
 
+import java.util.Date;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -43,6 +45,16 @@ public class HibernateTest
 		news.setAuthor("Oracle");
 		
 	}
+	@Test
+	public void save(){
+		News news =new News();
+		news.setTitle("AA");
+		news.setAuthor("BB");
+		news.setDate(new Date());
+		session.save(news);
+		System.out.println(news);
+	}
+	
 	@Test
 	public void testSessionCache()
 	{
