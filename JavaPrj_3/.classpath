@@ -6,8 +6,8 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-logging-1.0.4.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/freemarker-2.3.13.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ognl-2.6.11.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts2-core-2.1.6.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/xwork-2.1.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts2-core-2.1.6.jar" sourcepath="C:/Users/ADMINI~1/AppData/Local/Temp/decompiler/source/struts2-core-2.1.6-sources.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/xwork-2.1.2.jar" sourcepath="C:/Users/ADMINI~1/AppData/Local/Temp/decompiler/source/xwork-2.1.2-sources.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/antlr-2.7.6.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-collections-3.1.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/dom4j-1.6.1.jar"/>
@@ -15,6 +15,8 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/hibernate3-3.2.r14201-2.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/javassist-3.12.0.GA.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/hibernate3.jar"/>
 	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.hibernate.MYECLIPSE_HIBERNATE3_2_EM"/>
 	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.hibernate.MYECLIPSE_HIBERNATE3_2_CORE"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar"/>
