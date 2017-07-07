@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1" targetRuntime="MyBatis3Simple">
+  	<commentGenerator>
+  		<property name="suppressAllComments" value="true"/><!--不生成注释  -->
+  	</commentGenerator>
+  	
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/SpringmvcSpringMybatis" driverClass="com.mysql.jdbc.Driver" password="root2" userId="root" />
+    <javaModelGenerator targetPackage="com.xxx.model" targetProject="SpringmvcSpringMybatis" />
+    <sqlMapGenerator targetPackage="com.xxx.dao.mapping" targetProject="SpringmvcSpringMybatis" />
+    <javaClientGenerator targetPackage="com.xxx.dao" targetProject="SpringmvcSpringMybatis" type="XMLMAPPER" />
+    <table schema="SpringmvcSpringMybatis" tableName="content">
+      <columnOverride column="id" property="id" />
+      <columnOverride column="test" property="test" />
+      <columnOverride column="A" property="A" />
+      <columnOverride column="B" property="B" />
+      <columnOverride column="C" property="C" />
+      <columnOverride column="D" property="D" />
+      <columnOverride column="Answer" property="Answer" />
+    </table>
+  </context>
+</generatorConfiguration>
