@@ -12,7 +12,7 @@
     <result column="Answer" jdbcType="VARCHAR" property="Answer" />
   </resultMap>
   <!--删除 数据 -->
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from content
     where id = #{id,jdbcType=INTEGER}
   </delete>

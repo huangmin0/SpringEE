@@ -10,7 +10,7 @@
 	<center>增加试题</center>
 	<hr />
 	<center>
-		<form action="/SpringmvcSpringMybatis/content/add" method="post">
+		<form action="<%=request.getContextPath()%>/content/add" method="post">
 			<table>
 				<tr>
 					<td>test:<input id="test" name="test" type="text" />

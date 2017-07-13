@@ -6,12 +6,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript" src="<%=request.getContextPath()%>/pages/script/jquery.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/pages/script/common.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/pages/script/ssm/ssmnamespace.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/pages/script/ssm/content/content.js"></script>
 </head>
 <body>
 	<center>修改试题</center>
 	<hr />
 	<center>
-		<form action="/SpringmvcSpringMybatis/content/updateAll" method="post">
+		<form action="<%=request.getContextPath()%>/content/updateAll" method="post">
 			<input id="id" type="hidden" name="id" value="${cot.getId()}">
 			<table>
 				<tr>
@@ -46,8 +50,8 @@
 				</tr>
 			
 				<tr>
-					<td colspan="2"><input type="submit" value="保存" /> <input
-						type="reset" value="取消" /></td>
+					<td colspan="2"><input id="cotSaveBtn" type="submit" value="保存" /> <input
+					id="cotCancelBtn"	type="reset" value="取消" /></td>
 				</tr>
 			</table>
 		</form>

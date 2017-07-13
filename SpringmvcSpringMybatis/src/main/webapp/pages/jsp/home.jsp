@@ -9,6 +9,6 @@
 <body>
 	<h1>Home,from forward</h1>
 	<a href="pages/login.html">登录</a>
-	<a href="<%=request.getContextPath()%>/content/selectall">管理学生试题</a>
+	<a href="<%=request.getContextPath()%>/pages/jsp/content/contentMain.jsp">管理学生试题</a>
 </body>
 </html>
