@@ -32,7 +32,7 @@ public class ContentController2
 	public @ResponseBody ResultObject modContent(HttpServletRequest request,HttpServletResponse response,
 			@RequestBody Content content){
 		ResultObject ro=new ResultObject();
-		if(null==content||null==content.getId()){
+		if(null==content||null==content.getTest()){
 			return ro;
 		}
 		if(content.getId()==null){
@@ -67,7 +67,7 @@ public class ContentController2
 		Content content=iContentService.selectContent(id);
 		ModelAndView mv=new ModelAndView();
 		mv.addObject("cot",content);
-		mv.setViewName("content/contentMain");
+		mv.setViewName("content/contentUpdate");
 		return mv;
 	}
 	//获取所有试题的方法

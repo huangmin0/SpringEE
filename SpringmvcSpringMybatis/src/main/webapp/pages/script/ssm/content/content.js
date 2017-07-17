@@ -39,6 +39,9 @@ SSM.COT = (function() {
 		// 判断list是非空
 		if (isNull(list)) {
 			return
+
+			
+
 		} else {
 			var items = "";
 			// 追加动态生成的组件
@@ -61,16 +64,17 @@ SSM.COT = (function() {
 		var requesturl = CONTEXT + "/content/addOrMod";
 		var reqdata;
 		if (isNull(id)) {
-			reqdata = '{"test":"' + $("#test").val() + '","A":"'
-					+ $("#A").val() + '","B":"' + $("#B").val + '","C":"'
-					+ $("#C").val + '","D":"' + $("#D").val + '","Answer":"'
-					+ $("#Answer") + '"}';
+			reqdata = '{"test":"' + $("#test").val() + '","a":"'
+					+ $("#A").val() + '","b":"' + $("#B").val() + '","c":"'
+					+ $("#C").val() + '","d":"' + $("#D").val() + '","answer":"'
+					+ $("#Answer").val() + '"}';
 
 		} else {
-			reqdata = '{"test":"' + $("#test").val() + '","A":"'
-					+ $("#A").val() + '","B":"' + $("#B").val + '","C":"'
-					+ $("#C").val + '","D":"' + $("#D").val + '","Answer":"'
-					+ $("#Answer") + '","id":"' + $("#id").val() + '"}';
+			reqdata = '{"test":"' + $("#test").val() + '","a":"'
+					+ $("#A").val() + '","b":"' + $("#B").val() + '","c":"'
+					+ $("#C").val() + '","d":"' + $("#D").val()
+					+ '","answer":"' + $("#Answer").val() + '","id":"'
+					+ $("#id").val() + '"}';
 
 		}
 		$.ajax({
@@ -97,7 +101,7 @@ SSM.COT = (function() {
 		$.ajax({
 			type : 'POST',
 			contentType : 'application/json',
-			url : CONTEXT + "content/del",
+			url : CONTEXT + "/content/del",
 			processData : false,
 			dataType : 'json',
 			data : '{"ids":"' + ids + '"}',
@@ -169,11 +173,12 @@ $(function() {
 	$("#cotDelBtn").click(function() {
 		// 获取选中的checkbox
 		var ids = [];
-		$("#myTable :input:checked").click(function() {
-			ids.push($(this).val())
+		$("#myTable :input:checked").each(function() {
+			ids.push($(this).val());
 		});
+		
 		if (isNull(ids) || ids.length < 1) {
-			showmsg("请至少选择一条记录以删除！");
+			alert("请至少选择一条记录更新");
 		} else {
 			SSM.COT.delCot(ids);
 		}
